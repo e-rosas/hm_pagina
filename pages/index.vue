@@ -19,6 +19,7 @@
         >
           GitHub
         </a>
+        <nuxt-link to="promos">Register</nuxt-link>
       </div>
     </div>
   </div>
