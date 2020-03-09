@@ -1,7 +1,11 @@
 <template>
   <div>
     <b-form v-if="show" @submit="onSubmit" @reset="onReset">
-      <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+      <b-form-group
+        id="input-group-2"
+        label="Your Full Name:"
+        label-for="input-2"
+      >
         <b-form-input
           id="input-2"
           v-model="form.name"
@@ -41,7 +45,7 @@
       <b-form-group id="input-group-3" label="Birth date:" label-for="input-3">
         <b-form-input
           id="input-3"
-          v-model="form.date"
+          v-model="form.birth_date"
           type="date"
           required
         ></b-form-input>
@@ -86,12 +90,12 @@ export default {
       const currentObj = this
 
       this.$axios
-        .post('http://localhost:8000/register', {
-          name: this.name,
-          birth_date: this.birth_date,
-          phone_number: this.phone_number,
-          email: this.email,
-          insured: this.insured
+        .post('http://promociones-api.hospitalmexico.org/api/register', {
+          name: this.form.name,
+          birth_date: this.form.birth_date,
+          phone_number: this.form.phone_number,
+          email: this.form.email,
+          insured: this.form.insured
         })
 
         .then(function(response) {
