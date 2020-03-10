@@ -7,10 +7,8 @@
 
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
-          <a
-            href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
-          >
-            <img src="img/brand/blue.png" />
+          <a href="#">
+            <img src="img/brand/Hm-logo-02.png" />
           </a>
         </div>
         <div class="col-6 collapse-close">
@@ -19,70 +17,56 @@
       </div>
 
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-        <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
-          <a
-            slot="title"
-            href="#"
-            class="nav-link"
-            data-toggle="dropdown"
-            role="button"
-          >
-            <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">Components</span>
-          </a>
-          <div class="dropdown-menu-inner">
-            <a
-              href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
-              class="media d-flex align-items-center"
-            >
-              <div
-                class="icon icon-shape bg-gradient-primary rounded-circle text-white"
-              >
-                <i class="ni ni-spaceship"></i>
-              </div>
-              <div class="media-body ml-3">
-                <h6 class="heading text-primary mb-md-1">Getting started</h6>
-                <p class="description d-none d-md-inline-block mb-0">
-                  Get started with Bootstrap, the world's most popular framework
-                  for building responsive sites.
-                </p>
-              </div>
-            </a>
-            <a
-              href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
-              class="media d-flex align-items-center"
-            >
-              <div
-                class="icon icon-shape bg-gradient-warning rounded-circle text-white"
-              >
-                <i class="ni ni-ui-04"></i>
-              </div>
-              <div class="media-body ml-3">
-                <h5 class="heading text-warning mb-md-1">Components</h5>
-                <p class="description d-none d-md-inline-block mb-0">
-                  Learn how to use Argon compiling Scss, change brand colors and
-                  more.
-                </p>
-              </div>
-            </a>
-          </div>
-        </base-dropdown>
         <base-dropdown tag="li" class="nav-item">
           <a
             slot="title"
-            href="#"
+            href="#services"
             class="nav-link"
             data-toggle="dropdown"
             role="button"
           >
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Examples</span>
+            <i class="fa fa-hospital-o d-lg-none"></i>
+            <span class="nav-link-inner--text">SERVICES</span>
           </a>
+          <a class="dropdown-item" href="#services">Dental</a>
+          <a class="dropdown-item" href="#services">Surgeries</a>
+          <a class="dropdown-item" href="#services">Medical Specialists</a>
+          <a class="dropdown-item" href="#services">Hospitalization</a>
+          <a class="dropdown-item" href="#services">Laboratory</a>
+          <a class="dropdown-item" href="#services">Treatments</a>
           <nuxt-link to="/landing" class="dropdown-item">Landing</nuxt-link>
-          <nuxt-link to="/profile" class="dropdown-item">Profile</nuxt-link>
-          <nuxt-link to="/login" class="dropdown-item">Login</nuxt-link>
-          <nuxt-link to="/register" class="dropdown-item">Register</nuxt-link>
         </base-dropdown>
+      </ul>
+      <ul class="navbar-nav ml-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="http://dentimexico.com">
+            DENTALCENTER
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#insurances">
+            INSURANCES
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#pricing">
+            PRICING
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-icon"
+            href="https://www.youtube.com/watch?v=rUZd4YgJ9nI"
+          >
+            DIRECTIONS
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="#contact">
+            CONTACT
+          </a>
+        </li>
+        <nuxt-link class="navbar-brand mr-lg-5" to="register"> </nuxt-link>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
@@ -92,66 +76,38 @@
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"
-            title="Correo"
+            title="Email Us"
           >
-            <i class="fa fa-envelope"
-              ><p class="d-none d-lg-block description">
-                info@hospitalmexico.org
-              </p></i
+            <i class="fa fa-envelope"></i>
+            <span class="nav-link-inner--text d-lg-none"
+              >info@hospitalmexico.org</span
             >
-            <span class="nav-link-inner--text d-lg-none">Email</span>
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="https://www.instagram.com/creativetimofficial"
+            href="tel:18003158714"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"
-            title="Follow us on Instagram"
+            title="Call Us"
           >
-            <i class="fa fa-instagram"></i>
-            <span class="nav-link-inner--text d-lg-none">Instagram</span>
+            <i class="fa fa-phone"></i>
+            <span class="nav-link-inner--text d-lg-none">1 800 315 87 14</span>
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="https://twitter.com/creativetim"
+            href="#"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"
-            title="Follow us on Twitter"
+            title="En Español"
           >
-            <i class="fa fa-twitter-square"></i>
-            <span class="nav-link-inner--text d-lg-none">Twitter</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link nav-link-icon"
-            href="https://github.com/creativetimofficial/vue-argon-design-system"
-            target="_blank"
-            rel="noopener"
-            data-toggle="tooltip"
-            title="Star us on Github"
-          >
-            <i class="fa fa-github"></i>
-            <span class="nav-link-inner--text d-lg-none">Github</span>
-          </a>
-        </li>
-        <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a
-            href="https://www.creative-tim.com/product/vue-argon-design-system"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-neutral btn-icon"
-          >
-            <span class="btn-inner--icon">
-              <i class="fa fa-cloud-download mr-2"></i>
-            </span>
-            <span class="nav-link-inner--text">Download</span>
+            <i class="fa fa-globe"></i>
+            <span class="nav-link-inner--text d-lg-none">Español</span>
           </a>
         </li>
       </ul>

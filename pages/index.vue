@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <Hero></Hero>
+    <MainSlider></MainSlider>
+    <Description></Description>
+    <Services></Services>
+    <Surgeries></Surgeries>
+    <Insurances></Insurances>
   </div>
 </template>
 
 <script>
-import Hero from './components/Hero'
+import MainSlider from './components/MainSlider'
+import Description from './components/Description'
+import Services from './components/Services'
+import Surgeries from './components/Surgeries'
+import Insurances from './components/Insurances'
 export default {
   layout: 'App',
   name: 'Index',
   components: {
-    Hero
+    MainSlider,
+    Description,
+    Services,
+    Surgeries,
+    Insurances
   }
 }
 </script>
