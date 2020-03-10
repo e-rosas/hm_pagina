@@ -1,4 +1,3 @@
-/* eslint-disable vue/require-default-prop */
 <template>
   <component
     :is="tag"
@@ -45,18 +44,22 @@ export default {
       default: 'down'
     },
     title: {
+      default: '',
       type: String,
       description: 'Dropdown title'
     },
     icon: {
+      default: '',
       type: String,
       description: 'Icon for dropdown title'
     },
     position: {
+      default: '',
       type: String,
       description: 'Position of dropdown menu (e.g right|left)'
     },
     menuClasses: {
+      default: '',
       type: [String, Object],
       description: 'Dropdown menu classes'
     },

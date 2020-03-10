@@ -35,7 +35,9 @@ export default {
     '~/plugins/argon-kit',
     '~/plugins/globalComponents',
     '~/plugins/globalDirectives',
-    '~/plugins/vueLazyLoad'
+    '~/plugins/vueLazyLoad',
+    '~/plugins/v-click-outside',
+    '~/plugins/argon'
   ],
   /*
    ** Nuxt.js dev-modules
