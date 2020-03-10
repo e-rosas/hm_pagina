@@ -23,11 +23,20 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    // SCSS file in the project
+    '@/assets/scss/argon.scss'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/vue2-transitions',
+    '~/plugins/argon-kit',
+    '~/plugins/globalComponents',
+    '~/plugins/globalDirectives',
+    '~/plugins/vueLazyLoad'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
