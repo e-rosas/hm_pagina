@@ -1,28 +1,59 @@
 <template>
-  <section class="section section-lg pt-0">
-    <div class="container">
-      <card gradient="secondary" no-body shadow-size="lg" class="border-0">
-        <div class="p-5">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="pr-md-5">
-                <icon
-                  name="fa fa-question-circle"
-                  class="mb-5"
-                  size="lg"
-                  type="info"
-                  shadow
-                  rounded
-                ></icon>
-                <h2 class="">
-                  Contact us
-                </h2>
-                <ul class="list-unstyled mt-5">
-                  <li class="py-2">
-                    <div class="d-flex align-items-center">
+  <section id="contact" class="section section-lg pt-0">
+    <section class="section-shaped my-0">
+      <div class="shape shape-style-1 shape-default shape-skew">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="container">
+        <card gradient="secondary" no-body shadow-size="lg" class="border-0">
+          <div class="p-5">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="pr-md-5">
+                  <icon
+                    name="fa fa-question-circle"
+                    class="mb-5"
+                    size="lg"
+                    type="info"
+                    shadow
+                    rounded
+                  ></icon>
+                  <h2 class="">
+                    Contact us
+                  </h2>
+                  <ul class="list-unstyled mt-5">
+                    <li class="py-2">
+                      <div class="d-flex align-items-center">
+                        <a
+                          class="nav-link nav-link-icon"
+                          href="tel:18003158714"
+                          target="_blank"
+                          rel="noopener"
+                          data-toggle="tooltip"
+                          title="Call Us"
+                        >
+                          <badge
+                            type="info"
+                            circle
+                            class="mr-3"
+                            icon="fa fa-phone"
+                          ></badge>
+                          <h6 class="mb-0">In USA 1 800 315 87 14</h6>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="py-2">
                       <a
                         class="nav-link nav-link-icon"
-                        href="tel:18003158714"
+                        href="tel:01152(664)6836363"
                         target="_blank"
                         rel="noopener"
                         data-toggle="tooltip"
@@ -34,79 +65,61 @@
                           class="mr-3"
                           icon="fa fa-phone"
                         ></badge>
-                        <h6 class="mb-0">In USA 1 800 315 87 14</h6>
+                        <h6 class="mb-0">To México 011 52 (664) 683 63 63</h6>
                       </a>
-                    </div>
-                  </li>
-                  <li class="py-2">
-                    <a
-                      class="nav-link nav-link-icon"
-                      href="tel:01152(664)6836363"
-                      target="_blank"
-                      rel="noopener"
-                      data-toggle="tooltip"
-                      title="Call Us"
-                    >
-                      <badge
-                        type="info"
-                        circle
-                        class="mr-3"
-                        icon="fa fa-phone"
-                      ></badge>
-                      <h6 class="mb-0">To México 011 52 (664) 683 63 63</h6>
-                    </a>
-                  </li>
-                  <li class="py-2">
-                    <a
-                      class="nav-link nav-link-icon"
-                      href="mailto:info@hospitalmexico.org"
-                      target="_blank"
-                      rel="noopener"
-                      data-toggle="tooltip"
-                      title="Email Us"
-                    >
-                      <badge
-                        type="info"
-                        circle
-                        class="mr-3"
-                        icon="fa fa-envelope"
-                      ></badge>
-                      <h6 class="mb-0">info@hospitalmexico.org</h6>
-                    </a>
-                  </li>
-                  <li class="py-2">
-                    <a
-                      class="nav-link nav-link-icon"
-                      target="_blank"
-                      rel="noopener"
-                      data-toggle="tooltip"
-                      title="Address"
-                    >
-                      <badge
-                        type="info"
-                        circle
-                        class="mr-3"
-                        icon="fa fa-map-marker"
-                      ></badge>
-                      <h6 class="mb-0">
-                        Hospital México 9077 De la Amistad Av., Colonia Federal,
-                        22010 Tijuana, B.C.
-                      </h6>
-                    </a>
-                  </li>
-                </ul>
+                    </li>
+                    <li class="py-2">
+                      <a
+                        class="nav-link nav-link-icon"
+                        href="mailto:info@hospitalmexico.org"
+                        target="_blank"
+                        rel="noopener"
+                        data-toggle="tooltip"
+                        title="Email Us"
+                      >
+                        <badge
+                          type="info"
+                          circle
+                          class="mr-3"
+                          icon="fa fa-envelope"
+                        ></badge>
+                        <h6 class="mb-0">info@hospitalmexico.org</h6>
+                      </a>
+                    </li>
+                    <li class="py-2">
+                      <a
+                        class="nav-link nav-link-icon"
+                        target="_blank"
+                        rel="noopener"
+                        data-toggle="tooltip"
+                        title="Address"
+                      >
+                        <badge
+                          type="info"
+                          circle
+                          class="mr-3"
+                          icon="fa fa-map-marker"
+                        ></badge>
+                        <h6 class="mb-0">
+                          Hospital México 9077 De la Amistad Av., Colonia
+                          Federal, 22010 Tijuana, B.C.
+                        </h6>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-8 resp-container vue-friendly-iframe">
+                <vue-friendly-iframe
+                  class="iframe"
+                  :src="maps"
+                ></vue-friendly-iframe>
               </div>
             </div>
-            <div class="col-lg-8 resp-container vue-friendly-iframe">
-              <vue-friendly-iframe
-                class="iframe"
-                :src="maps"
-              ></vue-friendly-iframe>
-            </div>
           </div>
-        </div>
-      </card>
-    </div>
+        </card>
+      </div>
+    </section>
   </section>
 </template>
 <style>

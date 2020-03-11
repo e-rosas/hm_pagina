@@ -1,60 +1,90 @@
 <template>
-  <section class="section section-lg pt-lg-0">
+  <section id="services" class="section section-lg pt-lg-0">
     <div class="container">
-      <div class="row justify-content-center">
-        <b-card-group deck>
-          <b-card
-            img-src="http://hospitalmexico.org/images/do/service-article.jpg"
-            img-alt="Image"
-            img-top
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2"
-          >
-            <b-card-text>
-              Oral and maxillofacial surgery, article implants, Endodontists,
-              Orthodontists, Periodontists.
-            </b-card-text>
-          </b-card>
-          <b-card
-            img-src="http://hospitalmexico.org/images/do/service-surgery.jpg"
-            img-alt="Image"
-            img-top
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2"
-          >
-            <b-card-text>
-              Tonsils, Appendix, Gallbladder, Kidney stones, Uterus removal,
-              Ovarian cyst, hernias.
-            </b-card-text>
-          </b-card>
-          <b-card
-            img-src="http://hospitalmexico.org/images/do/service-specialists.jpg"
-            img-alt="Image"
-            img-top
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2"
-          >
-            <b-card-text>
-              Internal medicine, Dermatology, Psychology, Psychiatry,
-              Pediatrics, Hematology.
-            </b-card-text>
-          </b-card>
-          <b-card
-            img-src="http://hospitalmexico.org/images/do/service-laboratory.jpg"
-            img-alt="Image"
-            img-top
-            tag="article"
-            style="max-width: 20rem;"
-            class="mb-2"
-          >
-            <b-card-text>
-              X-rays, laboratory and radiodiagnosis.
-            </b-card-text>
-          </b-card>
-        </b-card-group>
+      <div class="row justify-content-center text-center mb-lg">
+        <div class="col-lg-8">
+          <h2 class="display-3">Our Services</h2>
+          <p class="lead text-muted">
+            These are some of the services we offer:
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center mt--100">
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <card class="border-0" hover shadow body-classes="py-5">
+            <div class="px-6">
+              <img
+                v-lazy="'img/services/service-dental.jpg'"
+                class="rounded-square img-center img-fluid shadow shadow-lg--hover"
+                style="width: 200px;"
+              />
+              <div class="pt-4 text-center">
+                <h5 class="title">
+                  <small class="h6 text-muted"
+                    >Oral and Maxillofacial Surgery, Article Implants,
+                    Endodontists, Orthodontists, Periodontists.</small
+                  >
+                </h5>
+              </div>
+            </div>
+          </card>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <card class="border-0" hover shadow body-classes="py-5">
+            <div class="px-6">
+              <img
+                v-lazy="'img/services/service-surgery.jpg'"
+                class="rounded-square img-center img-fluid shadow shadow-lg--hover"
+                style="width: 200px;"
+              />
+              <div class="pt-4 text-center">
+                <h5 class="title">
+                  <small class="h6 text-muted"
+                    >Tonsils, Appendix, Gallbladder, Kidney Stones, Uterus
+                    Removal, Ovarian Cyst, Hernias.</small
+                  >
+                </h5>
+              </div>
+            </div>
+          </card>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <card class="border-0" hover shadow body-classes="py-5">
+            <div class="px-6">
+              <img
+                v-lazy="'img/services/service-specialists.jpg'"
+                class="rounded-square img-center img-fluid shadow shadow-lg--hover"
+                style="width: 200px;"
+              />
+              <div class="pt-4 text-center">
+                <h5 class="title">
+                  <small class="h6 text-muted"
+                    >Internal Medicine, Dermatology, Psychology, Psychiatry,
+                    Pediatrics, Hematology.</small
+                  >
+                </h5>
+              </div>
+            </div>
+          </card>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+          <card class="border-0" hover shadow body-classes="py-5">
+            <div class="px-6">
+              <img
+                v-lazy="'img/services/service-laboratory.jpg'"
+                class="rounded-square img-center img-fluid shadow shadow-lg--hover"
+                style="width: 200px;"
+              />
+              <div class="pt-4 text-center">
+                <h5 class="title">
+                  <small class="h6 text-muted"
+                    >X-rays, Laboratory and Radiodiagnosis.</small
+                  >
+                </h5>
+              </div>
+            </div>
+          </card>
+        </div>
       </div>
     </div>
   </section>

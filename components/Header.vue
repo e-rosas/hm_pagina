@@ -17,7 +17,7 @@
       </div>
 
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-        <base-dropdown tag="li" class="nav-item">
+        <base-dropdown class="nav-item">
           <a
             slot="title"
             href="#services"
@@ -36,8 +36,6 @@
           <a class="dropdown-item" href="#services">Treatments</a>
           <nuxt-link to="/landing" class="dropdown-item">Landing</nuxt-link>
         </base-dropdown>
-      </ul>
-      <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item">
           <a class="nav-link nav-link-icon" href="http://dentimexico.com">
             DENTALCENTER
@@ -68,6 +66,7 @@
         </li>
         <nuxt-link class="navbar-brand mr-lg-5" to="register"> </nuxt-link>
       </ul>
+      <ul class="navbar-nav ml-lg-auto"></ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <a

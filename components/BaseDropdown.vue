@@ -12,7 +12,6 @@
     :aria-expanded="isOpen"
     @click="toggleDropDown"
   >
-    >
     <slot name="title">
       <a
         class="dropdown-toggle nav-link"

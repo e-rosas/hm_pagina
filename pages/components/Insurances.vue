@@ -1,5 +1,5 @@
 <template>
-  <section class="section section-lg">
+  <section id="insurances" class="section mt--100">
     <div class="container">
       <div class="row justify-content-center text-center mb-lg">
         <div class="col-lg-12">

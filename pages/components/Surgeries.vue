@@ -1,11 +1,11 @@
 <template>
-  <section class="section section-lg">
+  <section id="pricing" class="section mt--100">
     <div class="container">
       <div class="row row-grid align-items-center">
         <div class="col-md-4 order-md-1">
           <div class="pr-md-5">
             <icon
-              name="fa fa-hospital-o"
+              name="fa fa-usd"
               class="mb-5"
               size="lg"
               type="success"
