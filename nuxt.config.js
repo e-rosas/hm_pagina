@@ -38,7 +38,8 @@ export default {
     '~/plugins/globalDirectives',
     '~/plugins/vueLazyLoad',
     '~/plugins/v-click-outside',
-    '~/plugins/argon'
+    '~/plugins/argon',
+    '~/plugins/vue-friendly-iframe'
   ],
   /*
    ** Nuxt.js dev-modules

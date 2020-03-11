@@ -5,6 +5,8 @@
     <Services></Services>
     <Surgeries></Surgeries>
     <Insurances></Insurances>
+    <Tourism></Tourism>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import Description from './components/Description'
 import Services from './components/Services'
 import Surgeries from './components/Surgeries'
 import Insurances from './components/Insurances'
+import Contact from './components/Contact'
+import Tourism from './components/Tourism'
 export default {
   layout: 'App',
   name: 'Index',
@@ -22,7 +26,9 @@ export default {
     Description,
     Services,
     Surgeries,
-    Insurances
+    Insurances,
+    Contact,
+    Tourism
   }
 }
 </script>
