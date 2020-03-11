@@ -9,10 +9,10 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'description',
-        name: 'description',
+        hid: 'Hospital México​',
+        name: 'Hospital México​ in Tijuana',
         content:
-          'Affordable surgeries, Treatments, Arthritis, Lupus, Lyme Disease, Migraine, Fibromyalgia'
+          'Hospital, Tijuana, México,​ Dental, Affordable surgeries, Treatments, Arthritis, Lupus, Lyme Disease, Migraine, Fibromyalgia'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -39,7 +39,7 @@ export default {
     '~/plugins/vueLazyLoad',
     '~/plugins/v-click-outside',
     '~/plugins/argon',
-    '~/plugins/vue-friendly-iframe'
+    '~/plugins/vuelidate'
   ],
   /*
    ** Nuxt.js dev-modules
@@ -66,7 +66,5 @@ export default {
    ** Build configuration
    */
   build: {},
-  router: {
-    base: '/nuxt/'
-  }
+  router: {}
 }

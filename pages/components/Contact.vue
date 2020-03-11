@@ -109,11 +109,16 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-8 resp-container vue-friendly-iframe">
-                <vue-friendly-iframe
-                  class="iframe"
-                  :src="maps"
-                ></vue-friendly-iframe>
+              <div class="col-lg-8">
+                <a
+                  href="https://www.google.com/maps/place/Hospital+M%C3%A9xico/@32.538482,-117.028058,15z/data=!4m5!3m4!1s0x0:0x6bd2e723d983788e!8m2!3d32.538482!4d-117.028058?hl=en-US"
+                >
+                  <img
+                    v-lazy="'img/tourism/hm-map-min.png'"
+                    class="img-fluid floating"
+                    alt="Fluid image"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -122,28 +127,3 @@
     </section>
   </section>
 </template>
-<style>
-.resp-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-.vue-friendly-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-</style>
-<script>
-export default {
-  data() {
-    return {
-      maps:
-        'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13454.759000387881!2d-117.03046125927736!3d32.53443218857138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bd2e723d983788e!2sHospital+M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1545940046180'
-    }
-  }
-}
-</script>

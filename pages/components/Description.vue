@@ -58,7 +58,7 @@
           <img
             v-lazy="'img/slider/HM-main-cirugias-min.jpg'"
             class="img-fluid floating"
-            alt="Fluid image"
+            alt="Surgeries image"
           />
         </div>
       </div>

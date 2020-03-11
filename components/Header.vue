@@ -34,10 +34,12 @@
           <a class="dropdown-item" href="#services">Hospitalization</a>
           <a class="dropdown-item" href="#services">Laboratory</a>
           <a class="dropdown-item" href="#services">Treatments</a>
-          <nuxt-link to="/landing" class="dropdown-item">Landing</nuxt-link>
         </base-dropdown>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="http://dentimexico.com">
+          <a
+            class="nav-link nav-link-icon"
+            href="http://hospitalmexico.org/dentimexico/"
+          >
             DENTALCENTER
           </a>
         </li>
@@ -64,7 +66,11 @@
             CONTACT
           </a>
         </li>
-        <nuxt-link class="navbar-brand mr-lg-5" to="register"> </nuxt-link>
+        <li class="nav-item">
+          <nuxt-link class="nav-link nav-link-icon" to="registro"
+            >REGISTER</nuxt-link
+          >
+        </li>
       </ul>
       <ul class="navbar-nav ml-lg-auto"></ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
@@ -99,7 +105,7 @@
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="#"
+            href="http://hospitalmexico.org/es/"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form v-if="show" @submit="onSubmit" @reset="onReset">
+    <b-form @submit="onSubmit" @reset="onReset">
       <b-form-group
         id="input-group-2"
         label="Your Full Name:"
@@ -63,9 +63,6 @@
       <b-button type="submit" variant="primary">Submit</b-button>
       <b-button type="reset" variant="danger">Reset</b-button>
     </b-form>
-    <b-card class="mt-3" header="Form Data Result">
-      <pre class="m-0">{{ form }}</pre>
-    </b-card>
   </div>
 </template>
 
@@ -79,8 +76,7 @@ export default {
         birth_date: '',
         phone_number: '',
         insured: 0
-      },
-      show: true
+      }
     }
   },
   methods: {
