@@ -1,6 +1,6 @@
 <template>
-  <header class="header-global">
-    <base-nav class="navbar-main" type="" effect="light" expand>
+  <div>
+    <base-nav type="" transparent effect="" expand>
       <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
         <img src="img/brand/Hm-logo-02.png" alt="logo" />
       </nuxt-link>
@@ -72,7 +72,6 @@
           >
         </li>
       </ul>
-      <ul class="navbar-nav ml-lg-auto"></ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <a
@@ -117,7 +116,7 @@
         </li>
       </ul>
     </base-nav>
-  </header>
+  </div>
 </template>
 <script>
 import BaseNav from '~/components/BaseNav'

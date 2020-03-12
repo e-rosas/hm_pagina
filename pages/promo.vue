@@ -8,40 +8,25 @@
 import FormPromo from './components/promo/FormPromo'
 
 export default {
+  layout: 'SimpleLayout',
+  name: 'Promo',
   components: { FormPromo },
   data() {
     return {
-      form: {
-        email: '',
-        name: '',
-        birth_date: '',
-        phone_number: '',
-        insured: 0
-      }
+      title: 'Hospital México​ - Promo'
     }
   },
-  methods: {
-    onSubmit(evt) {
-      evt.preventDefault()
-      alert(JSON.stringify(this.form))
-      const currentObj = this
-
-      this.$axios
-        .post('http://promociones-api.hospitalmexico.org/api/register', {
-          name: this.form.name,
-          birth_date: this.form.birth_date,
-          phone_number: this.form.phone_number,
-          email: this.form.email,
-          insured: this.form.insured
-        })
-
-        .then(function(response) {
-          currentObj.output = response.data
-        })
-
-        .catch(function(error) {
-          currentObj.output = error
-        })
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'Promo',
+          name: 'Promociones, Promotions, Hospital México​ Tijuana',
+          content: 'Promo, Oferta, Hospital, México​, Tijuana'
+        }
+      ]
     }
   }
 }

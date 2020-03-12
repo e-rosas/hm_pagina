@@ -207,7 +207,7 @@
                       label-for="input-comments"
                     >
                       <b-form-textarea
-                        id="input-cooments"
+                        id="input-comments"
                         v-model="form.comments"
                         placeholder="Comentarios..."
                         rows="3"
@@ -280,7 +280,6 @@ export default {
       } else {
         // do your submit logic here
         this.submitStatus = 'PENDING'
-        alert(JSON.stringify(this.form))
         setTimeout(() => {
           this.submitStatus = 'OK'
         }, 500)

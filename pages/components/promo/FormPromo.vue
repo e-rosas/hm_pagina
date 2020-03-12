@@ -4,17 +4,17 @@
       <card gradient="secondary" shadow body-classes="p-lg-5">
         <h4 class="mb-1">Promo</h4>
         <p class="mt-0">
-          Texto
+          Detalles de la promoción
         </p>
         <div>
           <b-form @submit="onSubmit">
             <div class="row">
-              <div class="col-lg-8 col-sm-6">
+              <div class="col-lg-8">
                 <b-form-group
                   id="input-group-name"
                   label="Nombre completo"
                   label-for="input-name"
-                  :state="!$v.form.name.$invalid"
+                  :state="$v.form.name.$invalid"
                 >
                   <b-form-input
                     id="input-name"
@@ -32,7 +32,7 @@
                   </div>
                 </b-form-group>
               </div>
-              <div class="col-lg-4 col-sm-6">
+              <div class="col-lg-4">
                 <b-form-group
                   id="input-group-phone"
                   label="Teléfono"
@@ -57,7 +57,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-8 col-sm-6">
+              <div class="col-lg-8">
                 <b-form-group
                   id="input-group-email"
                   label="E-mail"
@@ -80,7 +80,7 @@
                   </div>
                 </b-form-group>
               </div>
-              <div class="col-lg-4 col-sm-6">
+              <div class="col-lg-4">
                 <b-form-group
                   id="input-group-bith-date"
                   label="Fecha de nacimiento"
@@ -103,24 +103,28 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-9">
                 <b-form-group label="¿Cuenta con aseguranza?">
                   <b-form-radio-group v-model="form.insured" :options="options">
                   </b-form-radio-group>
                 </b-form-group>
               </div>
-              <div class="col-lg-9 col-sm-6">
-                <b-form-group label="Familiares que desea incluir: ">
-                  <b-form-input v-model="count" type="number"></b-form-input>
-                </b-form-group>
-              </div>
             </div>
             <div class="row">
-              <ul v-for="h in count" :key="h">
-                <li>
-                  <b-form-input type="text"></b-form-input>
-                </li>
-              </ul>
+              <div class="col-lg-12">
+                <b-form-group
+                  id="input-group-relatives"
+                  label="Nombre completo de familiares que desea incluir"
+                  label-for="input-relatives"
+                >
+                  <b-form-textarea
+                    id="input-cooments"
+                    v-model="form.relatives"
+                    rows="3"
+                    max-rows="6"
+                  ></b-form-textarea>
+                </b-form-group>
+              </div>
             </div>
 
             <b-button block type="submit" variant="primary">Enviar</b-button>
@@ -151,15 +155,11 @@ export default {
       form: {
         email: '',
         name: '',
-        city: '',
         phone: '',
         birth_date: null,
-        appointment_date: null,
-        last_appointment: null,
-        motive: null,
-        comments: ''
+        insured: 0,
+        relatives: ''
       },
-      count: 0,
       options: [
         { text: 'Si', value: 1 },
         { text: 'No', value: 0 }
@@ -169,37 +169,42 @@ export default {
   methods: {
     onSubmit(evt) {
       evt.preventDefault()
-      alert(JSON.stringify(this.form))
       const currentObj = this
+      this.$v.$touch()
+      if (this.$v.$invalid) {
+        this.submitStatus = 'ERROR'
+      } else {
+        // do your submit logic here
+        this.$axios
+          .post('http://promociones-api.hospitalmexico.org/api/register', {
+            name: this.form.name,
+            birth_date: this.form.birth_date,
+            phone_number: this.form.phone,
+            email: this.form.email,
+            insured: this.form.insured,
+            relatives: this.form.relatives
+          })
 
-      this.$axios
-        .post('http://promociones-api.hospitalmexico.org/api/register', {
-          name: this.form.name,
-          birth_date: this.form.birth_date,
-          phone_number: this.form.phone_number,
-          email: this.form.email,
-          insured: this.form.insured
-        })
+          .then(function(response) {
+            currentObj.output = response.data
+          })
 
-        .then(function(response) {
-          currentObj.output = response.data
-        })
-
-        .catch(function(error) {
-          currentObj.output = error
-        })
+          .catch(function(error) {
+            currentObj.output = error
+          })
+        this.submitStatus = 'PENDING'
+        setTimeout(() => {
+          this.submitStatus = 'OK'
+        }, 500)
+      }
     }
   },
   validations: {
     form: {
-      name: { required, minLength: minLength(4) },
-      city: { required },
+      name: { required, minLength: minLength(6) },
       email: { required, email },
       phone: { required, minLength: minLength(7) },
-      birth_date: { required },
-      appointment_date: { required },
-      last_appointment: { required },
-      motive: { required }
+      birth_date: { required }
     }
   }
 }

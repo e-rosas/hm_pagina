@@ -7,7 +7,7 @@
 <script>
 import FormRegister from './components/register/FormRegister'
 export default {
-  layout: 'App',
+  layout: 'SimpleLayout',
   name: 'Register',
   components: { FormRegister },
   data() {
