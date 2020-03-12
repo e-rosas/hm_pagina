@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-12">
       <img
-        v-lazy="'img/promo/HM-promo-Background-min.jpg'"
+        v-lazy="'/img/promo/HM-promo-Background-min.jpg'"
         class="img-fluid"
         alt="Promo image"
       />
