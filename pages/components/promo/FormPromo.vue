@@ -1,6 +1,13 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-lg-12">
+      <img
+        v-lazy="'img/promo/HM-promo-Background-min.jpg'"
+        class="img-fluid"
+        alt="Promo image"
+      />
+    </div>
+    <div class="col-lg-12 mt--300">
       <card gradient="secondary" shadow body-classes="p-lg-5">
         <h4 class="mb-1">Promo</h4>
         <p class="mt-0">
@@ -103,10 +110,29 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-9">
+              <div class="col-lg-4">
                 <b-form-group label="¿Cuenta con aseguranza?">
                   <b-form-radio-group v-model="form.insured" :options="options">
                   </b-form-radio-group>
+                </b-form-group>
+              </div>
+              <div class="col-lg-8">
+                <b-form-group
+                  id="input-group-city"
+                  label="Ciudad donde vive"
+                  label-for="input-city"
+                  :state="!$v.form.city.$invalid"
+                >
+                  <b-form-input
+                    id="input-city"
+                    v-model="form.city"
+                    :state="!$v.form.city.$invalid"
+                    required
+                    placeholder="Ciudad"
+                  ></b-form-input>
+                  <div v-if="!$v.form.city.required" class="error">
+                    Nombre de la ciudad es requerido
+                  </div>
                 </b-form-group>
               </div>
             </div>
@@ -158,6 +184,7 @@ export default {
         phone: '',
         birth_date: null,
         insured: 0,
+        city: '',
         relatives: ''
       },
       options: [
@@ -182,6 +209,7 @@ export default {
             phone_number: this.form.phone,
             email: this.form.email,
             insured: this.form.insured,
+            city: this.form.city,
             relatives: this.form.relatives
           })
 
@@ -202,6 +230,7 @@ export default {
   validations: {
     form: {
       name: { required, minLength: minLength(6) },
+      city: { required },
       email: { required, email },
       phone: { required, minLength: minLength(7) },
       birth_date: { required }

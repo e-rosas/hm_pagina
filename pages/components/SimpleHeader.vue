@@ -1,9 +1,9 @@
 <template>
   <header class="header-global">
-    <base-nav class="navbar-main" type="default" effect="dark" expand>
-      <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
+    <base-nav class="navbar-main" transparent type="" effect="dark" expand>
+      <div slot="brand" class="navbar-brand mr-lg-5">
         <img src="img/brand/Hm-logo-02.png" alt="logo" />
-      </nuxt-link>
+      </div>
 
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
