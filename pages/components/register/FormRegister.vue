@@ -115,15 +115,22 @@
                       label-for="input-birth_date"
                       :state="!$v.form.birth_date.$invalid"
                     >
-                      <b-form-datepicker
+                      <b-form-input
                         id="input-birth_date"
                         v-model="form.birth_date"
-                        :state="!$v.form.birth_date.$invalid"
-                        required
-                        :max="todayDate"
-                        placeholder="Fecha de nacimiento"
-                        class="mb-2"
-                      ></b-form-datepicker>
+                        type="text"
+                      ></b-form-input>
+                      <b-input-group-append>
+                        <b-form-datepicker
+                          v-model="form.birth_date"
+                          :max="today"
+                          :state="!$v.form.birth_date.$invalid"
+                          button-only
+                          right
+                          placeholder="YYYY-MM-DD"
+                          aria-controls="example-input"
+                        ></b-form-datepicker>
+                      </b-input-group-append>
                       <div v-if="!$v.form.birth_date.required" class="error">
                         Fecha de nacimiento es requerida
                       </div>
