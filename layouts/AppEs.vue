@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SimpleHeader />
+    <Header />
     <main>
       <fade-transition origin="center" mode="out-in" :duration="250">
         <nuxt />
@@ -12,13 +12,13 @@
 
 <script>
 import { FadeTransition } from 'vue2-transitions'
-import SimpleHeader from '~/pages/components/SimpleHeader'
+import Header from '~/pages/components/es/Header'
 import Footer from '~/pages/components/es/Footer'
 
 export default {
   components: {
     FadeTransition,
-    SimpleHeader,
+    Header,
     Footer
   }
 }

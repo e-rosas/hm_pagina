@@ -19,6 +19,7 @@ export default {
   name: 'CloseButton',
   props: {
     target: {
+      default: '',
       type: [String, Number],
       description: 'Close button target element'
     },

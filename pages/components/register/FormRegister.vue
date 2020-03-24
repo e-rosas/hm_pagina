@@ -119,6 +119,7 @@
                         id="input-birth_date"
                         v-model="form.birth_date"
                         type="text"
+                        placeholder="YYYY-MM-DD"
                       ></b-form-input>
                       <b-input-group-append>
                         <b-form-datepicker

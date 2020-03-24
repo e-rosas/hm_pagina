@@ -1,6 +1,6 @@
 <template>
   <header class="header-global">
-    <base-nav class="navbar-main" transparent type="" effect="dark" expand>
+    <base-nav class="navbar-main" type="primary" effect="light" expand>
       <div slot="brand" class="navbar-brand mr-lg-5">
         <img src="img/brand/Hm-logo-02.png" alt="logo" />
       </div>
@@ -45,17 +45,10 @@
           </a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link nav-link-icon"
-            href="http://hospitalmexico.org/es/"
-            target="_blank"
-            rel="noopener"
-            data-toggle="tooltip"
-            title="En Español"
-          >
+          <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="es">
             <i class="fa fa-globe"></i>
             <span class="nav-link-inner--text d-lg-none">Español</span>
-          </a>
+          </nuxt-link>
         </li>
       </ul>
     </base-nav>
