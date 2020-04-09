@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <MainSlider></MainSlider>
+    <Message></Message>
     <Description></Description>
     <Services></Services>
     <Surgeries></Surgeries>
@@ -18,6 +19,7 @@ import Surgeries from './components/Surgeries'
 import Insurances from './components/Insurances'
 import Contact from './components/Contact'
 import Tourism from './components/Tourism'
+import Message from './components/Message'
 export default {
   layout: 'App',
   name: 'Index',
@@ -28,7 +30,8 @@ export default {
     Surgeries,
     Insurances,
     Contact,
-    Tourism
+    Tourism,
+    Message
   }
 }
 </script>

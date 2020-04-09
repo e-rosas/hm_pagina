@@ -36,10 +36,7 @@
           <a class="dropdown-item" href="#services">Treatments</a>
         </base-dropdown>
         <li class="nav-item">
-          <a
-            class="nav-link nav-link-icon"
-            href="http://hospitalmexico.org/dentimexico/"
-          >
+          <a class="nav-link nav-link-icon" href="http://dentimexico.com/">
             DENTALCENTER
           </a>
         </li>
@@ -103,8 +100,7 @@
         </li>
         <li class="nav-item">
           <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="es">
-            <i class="fa fa-globe"></i>
-            <span class="nav-link-inner--text d-lg-none">Español</span>
+            <span class="nav-link">Español</span>
           </nuxt-link>
         </li>
       </ul>

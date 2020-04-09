@@ -34,22 +34,22 @@ export default {
     return {
       services: [
         {
-          procedure: 'Cirugía de amigdalas',
+          procedimiento: 'Cirugía de amigdalas',
           hospital_méxico: '$1,700 dlls.',
           USA: '$5,500 dlls.'
         },
         {
-          procedure: 'Cirugía de apendice',
+          procedimiento: 'Cirugía de apendice',
           hospital_méxico: '$2,300 dlls.',
           USA: '$10,000 dlls.'
         },
         {
-          procedure: 'Cirugía de vesícula',
+          procedimiento: 'Cirugía de vesícula',
           hospital_méxico: '$4,300 dlls.',
           USA: '$16,000 dlls.'
         },
         {
-          procedure: 'Cirugía de piedras en riñón',
+          procedimiento: 'Cirugía de piedras en riñón',
           hospital_méxico: '$3,100 dlls.',
           USA: '$12,000 dlls.'
         }
