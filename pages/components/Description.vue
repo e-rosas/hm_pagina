@@ -57,7 +57,7 @@
         <div class="col-md-6 order-md-2">
           <img
             v-lazy="'img/slider/HM-main-cirugias-min.jpg'"
-            class="img-fluid floating"
+            class="img-fluid"
             alt="Surgeries image"
           />
         </div>
