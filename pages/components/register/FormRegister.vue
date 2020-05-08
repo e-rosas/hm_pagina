@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <card gradient="secondary" shadow body-classes="p-lg-5">
-            <h4 class="mb-1">Aviso de consulta</h4>
+            <h1 class="mb-1">Aviso de consulta</h1>
             <p class="mt-0">
               Para brindarle un mejor servicio favor de avisarnos que día planea
               venir, se atiende en el orden en que llega al hospital.

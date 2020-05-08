@@ -6,6 +6,7 @@
         img-src="/img/slider/main/HM-main-fachada.jpg"
         img-fluid
         style="max-height:450px;"
+        img-alt="HM fachada"
       >
         <h2 style="color: white;">Hospital México remains open</h2>
         <div class="row d-none d-md-block">
@@ -13,7 +14,7 @@
             <h3 style="color: white;">
               It is okay to come to México for medical treatment
             </h3>
-            <h5 style="color: white;">
+            <h4 style="color: white;">
               Please call us at
               <a
                 href="tel:18003158714"
@@ -34,7 +35,7 @@
                 title="Call Us"
                 >011 52 664 683 6363 </a
               >for any questions.
-            </h5>
+            </h4>
           </div>
         </div>
       </b-carousel-slide>
@@ -52,6 +53,7 @@
         img-src="img/slider/main/HM-main-resultados.jpg"
         img-fluid
         style="max-height:450px;"
+        img-alt="HM results"
       >
         <h2 style="color: white;">Same day consultation and results.</h2>
       </b-carousel-slide>
@@ -59,5 +61,8 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  name: 'MainSlider',
+  serverCacheKey: (props) => props.item.id
+}
 </script>

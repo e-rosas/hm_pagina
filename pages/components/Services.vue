@@ -17,6 +17,7 @@
                 v-lazy="'img/services/service-dental.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Dental service image"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -36,6 +37,7 @@
                 v-lazy="'img/services/service-surgery.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Surgery service image"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -55,6 +57,7 @@
                 v-lazy="'img/services/service-specialists.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Specialists service image"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -74,6 +77,7 @@
                 v-lazy="'img/services/service-laboratory.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Laboratory service image"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -89,3 +93,9 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  name: 'Services',
+  serverCacheKey: (props) => props.item.id
+}
+</script>

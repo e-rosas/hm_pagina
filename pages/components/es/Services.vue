@@ -17,6 +17,7 @@
                 v-lazy="'/img/services/servicio-dental-min.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Servicio dental"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -36,6 +37,7 @@
                 v-lazy="'/img/services/servicio-cirugias-min.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Servicio cirugias"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -55,6 +57,7 @@
                 v-lazy="'/img/services/servicio-especialistas-min.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Servicio especialistas"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
@@ -74,6 +77,7 @@
                 v-lazy="'/img/services/servicio-laboratorio-min.jpg'"
                 class="rounded-square img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
+                alt="Servicio laboratorio"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">

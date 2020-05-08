@@ -30,6 +30,8 @@
 </template>
 <script>
 export default {
+  name: 'Surgeries',
+  serverCacheKey: (props) => props.item.id,
   data() {
     return {
       services: [

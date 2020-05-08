@@ -9,10 +9,9 @@
     </div>
     <div class="col-lg-12 mt--300">
       <card gradient="secondary" shadow body-classes="p-lg-5">
-        <h4 class="mb-1">Promo</h4>
-        <p class="mt-0">
+        <h1 class="mt-0">
           Detalles de la promoción
-        </p>
+        </h1>
         <div>
           <b-form @submit="onSubmit">
             <div class="row">

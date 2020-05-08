@@ -8,7 +8,7 @@
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
           <a href="#">
-            <img src="img/brand/Hm-logo-02.png" />
+            <img src="img/brand/Hm-logo-02.png" alt="logo" />
           </a>
         </div>
         <div class="col-6 collapse-close">
@@ -28,25 +28,43 @@
             <i class="fa fa-hospital-o d-lg-none"></i>
             <span class="nav-link-inner--text">SERVICES</span>
           </a>
-          <a class="dropdown-item" href="#services">Dental</a>
-          <a class="dropdown-item" href="#services">Surgeries</a>
-          <a class="dropdown-item" href="#services">Medical Specialists</a>
-          <a class="dropdown-item" href="#services">Hospitalization</a>
-          <a class="dropdown-item" href="#services">Laboratory</a>
-          <a class="dropdown-item" href="#services">Treatments</a>
+          <a class="dropdown-item" title="Dental" href="#services">Dental</a>
+          <a class="dropdown-item" title="Surgeries" href="#services"
+            >Surgeries</a
+          >
+          <a class="dropdown-item" title="Medical specialists" href="#services"
+            >Medical Specialists</a
+          >
+          <a class="dropdown-item" title="Hospitalization" href="#services"
+            >Hospitalization</a
+          >
+          <a class="dropdown-item" title="Laboratory" href="#services"
+            >Laboratory</a
+          >
+          <a class="dropdown-item" title="Treatments" href="#services"
+            >Treatments</a
+          >
         </base-dropdown>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="http://dentimexico.com/">
+          <a
+            class="nav-link nav-link-icon"
+            title="DentiMexico"
+            href="http://dentimexico.com/"
+          >
             DENTALCENTER
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#insurances">
+          <a
+            class="nav-link nav-link-icon"
+            title="Insurances"
+            href="#insurances"
+          >
             INSURANCES
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#pricing">
+          <a class="nav-link nav-link-icon" title="Pricing" href="#pricing">
             PRICING
           </a>
         </li>
@@ -54,17 +72,21 @@
           <a
             class="nav-link nav-link-icon"
             href="https://www.youtube.com/watch?v=rUZd4YgJ9nI"
+            title="Directions"
           >
             DIRECTIONS
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="#contact">
+          <a class="nav-link nav-link-icon" href="#contact" title="Contact">
             CONTACT
           </a>
         </li>
         <li class="nav-item">
-          <nuxt-link class="nav-link nav-link-icon" to="registro"
+          <nuxt-link
+            class="nav-link nav-link-icon"
+            to="registro"
+            title="Register"
             >REGISTER</nuxt-link
           >
         </li>
@@ -113,6 +135,8 @@ import BaseDropdown from '~/components/BaseDropdown'
 import CloseButton from '~/components/CloseButton'
 
 export default {
+  name: 'Header',
+  serverCacheKey: (props) => props.item.id,
   components: {
     BaseNav,
     CloseButton,

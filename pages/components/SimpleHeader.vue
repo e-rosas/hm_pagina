@@ -2,13 +2,13 @@
   <header class="header-global">
     <base-nav class="navbar-main" type="primary" effect="light" expand>
       <div slot="brand" class="navbar-brand mr-lg-5">
-        <img src="img/brand/Hm-logo-02.png" alt="logo" />
+        <img src="/img/brand/Hm-logo-02.png" alt="logo" />
       </div>
 
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
           <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-            <img src="img/brand/Hm-logo-02.png" alt="logo" />
+            <img src="/img/brand/Hm-logo-02.png" alt="logo" />
           </nuxt-link>
         </div>
         <div class="col-6 collapse-close">
@@ -58,6 +58,8 @@ import BaseNav from '~/components/BaseNav'
 import CloseButton from '~/components/CloseButton'
 
 export default {
+  name: 'SimpleHeader',
+  serverCacheKey: (props) => props.item.id,
   components: {
     BaseNav,
     CloseButton

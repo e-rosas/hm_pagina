@@ -35,19 +35,25 @@ export default {
   },
   data() {
     return {
-      title: 'Hospital México​ en Tijuana'
+      title: 'Hospital Mexico​ en Tijuana',
+      description:
+        'Hospital Mexico en Tijuana ha brindado atencion medica por mas de 25 años. Llame ahora en caso de tener alguna duda o pregunta.'
     }
   },
   head() {
     return {
       title: this.title,
+      htmlAttrs: {
+        lang: 'es'
+      },
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: 'Hospital México​ Tijuana Español',
-          name: 'Hospital México​, Tijuana, Hospital México​ Tijuana',
+          hid: 'Hospital Mexico​ Tijuana Español',
+          name: 'Hospital Mexico​, Tijuana, Hospital Mexico​ Tijuana',
+          description: this.description,
           content:
-            ' Hospital, México​, Tijuana, Cirugias, Seguro, Aseguranza, Rayos-X, Laboratorios, Especialidades, Tratamientos'
+            'Hospital, Mexico​, Tijuana, Cirugias, Seguro, Aseguranza, Rayos-X, Laboratorios, Especialidades, Tratamientos, Mexico'
         }
       ]
     }

@@ -30,6 +30,7 @@
                       v-lazy="'img/tourism/hm-tijuana.jpg'"
                       class="rounded-square img-center img-fluid shadow"
                       style="height:300px"
+                      alt="HM Tijuana image"
                     />
                   </div>
                 </div>
@@ -62,6 +63,7 @@
                       v-lazy="'img/tourism/cirugias-tijuana.jpg'"
                       class="rounded-square img-center img-fluid shadow"
                       style="height:190"
+                      alt="Surgeries in Tijuana image"
                     />
                   </div>
                 </div>
@@ -91,6 +93,7 @@
                       v-lazy="'img/tourism/panoramica-tijuana.jpg'"
                       class="rounded-square img-center img-fluid shadow"
                       style="height:400"
+                      alt="Panoramic view of Tijuana image"
                     />
                   </div>
                 </div>
@@ -102,3 +105,9 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  name: 'Tourism',
+  serverCacheKey: (props) => props.item.id
+}
+</script>

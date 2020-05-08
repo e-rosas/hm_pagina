@@ -29,6 +29,7 @@
                       v-lazy="'/img/tourism/hm-tijuana.jpg'"
                       class="rounded-square img-center img-fluid shadow"
                       style="height:300px"
+                      alt="HM Tijuana"
                     />
                   </div>
                 </div>
@@ -62,6 +63,7 @@
                       v-lazy="'/img/tourism/cirugias-tijuana.jpg'"
                       class="rounded-square img-center img-fluid shadow"
                       style="height:190"
+                      alt="Cirugias en Tijuana"
                     />
                   </div>
                 </div>
@@ -92,6 +94,7 @@
                       v-lazy="'/img/tourism/panoramica-tijuana.jpg'"
                       class="rounded-square img-center img-fluid shadow"
                       style="height:400"
+                      alt="Vista paronamica de Tijuana"
                     />
                   </div>
                 </div>

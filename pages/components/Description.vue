@@ -12,7 +12,7 @@
               shadow
               rounded
             ></icon>
-            <h3>Affordable health care for over 25 years.</h3>
+            <h1>Affordable health care for over 25 years.</h1>
             <ul class="list-unstyled mt-5">
               <li class="py-2">
                 <div class="d-flex align-items-center">
@@ -65,3 +65,9 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  name: 'Description',
+  serverCacheKey: (props) => props.item.id
+}
+</script>

@@ -9,10 +9,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'Hospital México​',
-        name: 'Hospital México​ in Tijuana',
-        content:
-          'Hospital, Tijuana, México,​ Dental, Affordable surgeries, Treatments, Arthritis, Lupus, Lyme Disease, Migraine, Fibromyalgia'
+        hid: 'Hospital México​'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -55,8 +52,20 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
+    [
+      '@nuxtjs/component-cache',
+      {
+        max: 10000,
+        maxAge: 1000 * 60 * 60
+      }
+    ]
   ],
+  sitemap: {
+    hostname: 'https://hospitalmexico.org/'
+    // gzip: true,
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

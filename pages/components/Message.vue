@@ -71,14 +71,15 @@
                 <a
                   href="https://mx.usembassy.gov/wha-press-guidance/"
                   style="color: black;"
+                  title="U.S Embassy"
                   >U.S. Embassy</a
                 >
               </div>
 
               <p class="text-white mt-3 text-justify">
-                Hospital México is taking all the necessary precautions to
-                guarantee your safety and well-being while visiting our
-                facility. Please call us at
+                Hospital México remains open and we are taking all the necessary
+                precautions to guarantee your safety and well-being while
+                visiting our facility. Please call us at
                 <a
                   href="tel:18003158714"
                   style="color: black;"
@@ -107,3 +108,9 @@
     </div>
   </section>
 </template>
+<script>
+export default {
+  name: 'Message',
+  serverCacheKey: (props) => props.item.id
+}
+</script>

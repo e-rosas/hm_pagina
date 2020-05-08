@@ -23,6 +23,7 @@ import Message from './components/Message'
 export default {
   layout: 'App',
   name: 'Index',
+  serverCacheKey: (props) => props.item.id,
   components: {
     MainSlider,
     Description,
@@ -32,6 +33,31 @@ export default {
     Contact,
     Tourism,
     Message
+  },
+  data() {
+    return {
+      title: 'Hospital México​ in Tijuana, providing affordable health care.',
+      description:
+        'Hospital Mexico in Tijuana has been providing affordable health care for over 25 years. Call now for any questions you may have.'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      htmlAttrs: {
+        lang: 'en'
+      },
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'Hospital México​ in Tijuana',
+          name: 'Hospital México​ in Tijuana',
+          description: this.description,
+          content:
+            'Hospital, Tijuana, México,​ Dental, Affordable surgeries, Treatments, Arthritis, Lupus, Lyme Disease, Migraine, Fibromyalgia, Mexico'
+        }
+      ]
+    }
   }
 }
 </script>

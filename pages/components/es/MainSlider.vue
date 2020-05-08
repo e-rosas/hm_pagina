@@ -6,8 +6,9 @@
         img-src="/img/slider/main/HM-main-fachada.jpg"
         img-fluid
         style="max-height:450px;"
+        img-alt="HM Fachada"
       >
-        <h3 style="color: white;">Hospital México está abierto</h3>
+        <h2 style="color: white;">Hospital México está abierto</h2>
         <div class="row d-none d-md-block">
           <h3 style="color: white;">
             Está bien venir a México por tratamiento médico
@@ -49,6 +50,7 @@
         img-src="/img/slider/main/HM-main-resultados.jpg"
         img-fluid
         style="max-height:450px;"
+        img-alt="HM Resultados"
       >
         <h3 style="color: white;">Cosulta y resultados el mismo día.</h3>
       </b-carousel-slide>

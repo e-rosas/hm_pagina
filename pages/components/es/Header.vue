@@ -8,7 +8,7 @@
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
           <a href="#">
-            <img src="/img/brand/Hm-logo-02.png" />
+            <img src="/img/brand/Hm-logo-02.png" alt="logo" />
           </a>
         </div>
         <div class="col-6 collapse-close">
@@ -42,7 +42,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link nav-link-icon" href="#insurances">
-            SEGUROS DE E.U
+            SEGUROS DE EE.UU
           </a>
         </li>
         <li class="nav-item">

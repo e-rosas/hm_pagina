@@ -13,12 +13,17 @@ export default {
   components: { FormPromo },
   data() {
     return {
-      title: 'Hospital México​ - Promo'
+      title: 'Hospital México​ - Promo',
+      description: 'Register now to receive exclusive benefits'
     }
   },
   head() {
     return {
       title: this.title,
+
+      htmlAttrs: {
+        lang: 'es'
+      },
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {

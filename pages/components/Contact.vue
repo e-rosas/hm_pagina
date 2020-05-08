@@ -116,7 +116,7 @@
                   <img
                     v-lazy="'img/tourism/hm-map-min.png'"
                     class="img-fluid floating"
-                    alt="Fluid image"
+                    alt="Google maps location"
                   />
                 </a>
               </div>
@@ -127,3 +127,9 @@
     </section>
   </section>
 </template>
+<script>
+export default {
+  name: 'Contact',
+  serverCacheKey: (props) => props.item.id
+}
+</script>

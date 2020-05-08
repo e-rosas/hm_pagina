@@ -12,7 +12,7 @@
               shadow
               rounded
             ></icon>
-            <h3>Atención médica a su alcance por más de 25 años.</h3>
+            <h1>Atención médica a su alcance por más de 25 años.</h1>
             <ul class="list-unstyled mt-5">
               <li class="py-2">
                 <div class="d-flex align-items-center">
