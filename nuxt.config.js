@@ -9,7 +9,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: 'Hospital México​'
+        name: 'keywords',
+        content:
+          'Hospital, Tijuana, México,​ Dental, Affordable surgeries, Treatments, Low cost, Services, Mexico'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Hospital Mexico in Tijuana has been providing affordable health care for over 25 years. Call now for any questions you may have.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -30,11 +38,6 @@ export default {
    */
   plugins: [
     '~/plugins/vue2-transitions',
-    '~/plugins/argon-kit',
-    '~/plugins/globalComponents',
-    '~/plugins/globalDirectives',
-    '~/plugins/vueLazyLoad',
-    '~/plugins/v-click-outside',
     '~/plugins/argon',
     '~/plugins/vuelidate'
   ],
@@ -74,6 +77,6 @@ export default {
   /*
    ** Build configuration
    */
-  build: {},
+  build: { extractCSS: true },
   router: {}
 }

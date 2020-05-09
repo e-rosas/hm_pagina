@@ -59,7 +59,6 @@ import CloseButton from '~/components/CloseButton'
 
 export default {
   name: 'SimpleHeader',
-  serverCacheKey: (props) => props.item.id,
   components: {
     BaseNav,
     CloseButton

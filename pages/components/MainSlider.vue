@@ -62,7 +62,6 @@
 </template>
 <script>
 export default {
-  name: 'MainSlider',
-  serverCacheKey: (props) => props.item.id
+  name: 'MainSlider'
 }
 </script>

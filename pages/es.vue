@@ -49,11 +49,15 @@ export default {
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: 'Hospital Mexico​ Tijuana Español',
-          name: 'Hospital Mexico​, Tijuana, Hospital Mexico​ Tijuana',
-          description: this.description,
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
           content:
-            'Hospital, Mexico​, Tijuana, Cirugias, Seguro, Aseguranza, Rayos-X, Laboratorios, Especialidades, Tratamientos, Mexico'
+            'Hospital, Tijuana, México,​ Dental,Cirugias accesibles, San Diego, Linea, Citas, Mexico, Accesible'
         }
       ]
     }

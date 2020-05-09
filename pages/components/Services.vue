@@ -95,7 +95,6 @@
 </template>
 <script>
 export default {
-  name: 'Services',
-  serverCacheKey: (props) => props.item.id
+  name: 'Services'
 }
 </script>

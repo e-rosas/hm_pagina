@@ -23,7 +23,6 @@ import Message from './components/Message'
 export default {
   layout: 'App',
   name: 'Index',
-  serverCacheKey: (props) => props.item.id,
   components: {
     MainSlider,
     Description,
@@ -38,7 +37,27 @@ export default {
     return {
       title: 'Hospital México​ in Tijuana, providing affordable health care.',
       description:
-        'Hospital Mexico in Tijuana has been providing affordable health care for over 25 years. Call now for any questions you may have.'
+        'Hospital México​ in Tijuana has been providing affordable health care for over 25 years. We offer medical services, including surgery, at a low cost. Call now for any questions you may have.',
+      structuredData: {
+        '@context': 'http://schema.org',
+        '@type': 'MedicalBusiness',
+        name: 'Hospital México',
+        currenciesAccepted: 'USD, MXN',
+        paymentAccepted: 'Cash, Credit Card',
+        image: 'https://hospitalmexico.org/img/brand/Hm-logo-02.png',
+        telephone: '1 800 315 87 14',
+        email: 'info@hospitalmexico.org',
+        openingHours: ['Mo-Su all day'],
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Hospital México 9077 De la Amistad Av.',
+          addressLocality: 'Colonia Federal',
+          addressRegion: 'Tijuana, B.C',
+          addressCountry: 'Mexico',
+          postalCode: '22010'
+        },
+        url: 'https://hospitalmexico.org/'
+      }
     }
   },
   head() {
@@ -50,13 +69,12 @@ export default {
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: 'Hospital México​ in Tijuana',
-          name: 'Hospital México​ in Tijuana',
-          description: this.description,
-          content:
-            'Hospital, Tijuana, México,​ Dental, Affordable surgeries, Treatments, Arthritis, Lupus, Lyme Disease, Migraine, Fibromyalgia, Mexico'
+          hid: 'description',
+          name: 'description',
+          content: this.description
         }
-      ]
+      ],
+      script: [{ type: 'application/ld+json', json: this.structuredData }]
     }
   }
 }

@@ -107,7 +107,6 @@
 </template>
 <script>
 export default {
-  name: 'Tourism',
-  serverCacheKey: (props) => props.item.id
+  name: 'Tourism'
 }
 </script>

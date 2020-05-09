@@ -103,7 +103,6 @@
 </template>
 <script>
 export default {
-  name: 'Insurances',
-  serverCacheKey: (props) => props.item.id
+  name: 'Insurances'
 }
 </script>

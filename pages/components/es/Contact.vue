@@ -129,3 +129,8 @@
     </section>
   </section>
 </template>
+<script>
+export default {
+  name: 'Contacto'
+}
+</script>

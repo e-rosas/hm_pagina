@@ -110,7 +110,6 @@
 </template>
 <script>
 export default {
-  name: 'Message',
-  serverCacheKey: (props) => props.item.id
+  name: 'Message'
 }
 </script>

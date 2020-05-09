@@ -57,7 +57,6 @@
 <script>
 export default {
   name: 'Footer',
-  serverCacheKey: (props) => props.item.id,
   data() {
     return {
       year: new Date().getFullYear()

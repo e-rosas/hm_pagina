@@ -16,6 +16,7 @@ import Header from '~/pages/components/es/Header'
 import Footer from '~/pages/components/es/Footer'
 
 export default {
+  name: 'AppEs',
   components: {
     FadeTransition,
     Header,

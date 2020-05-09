@@ -16,6 +16,7 @@ import SimpleHeader from '~/pages/components/SimpleHeader'
 import Footer from '~/pages/components/es/Footer'
 
 export default {
+  name: 'SimpleLayout',
   components: {
     FadeTransition,
     SimpleHeader,
