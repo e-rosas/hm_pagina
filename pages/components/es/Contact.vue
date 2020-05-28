@@ -118,7 +118,7 @@
                   <img
                     v-lazy="'/img/tourism/hm-map-min.png'"
                     class="img-fluid floating"
-                    alt="Google maps location"
+                    alt="Hospital Mexico location"
                   />
                 </a>
               </div>

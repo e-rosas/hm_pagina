@@ -2,13 +2,13 @@
   <div>
     <base-nav type="" transparent effect="" expand>
       <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-        <img src="/img/brand/Hm-logo-02.png" alt="logo" />
+        <img src="/img/brand/Hm-logo-02.png" alt="Hospital Mexico" />
       </nuxt-link>
 
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
           <a href="#">
-            <img src="/img/brand/Hm-logo-02.png" alt="logo" />
+            <img src="/img/brand/Hm-logo-02.png" alt="Hospital Mexico" />
           </a>
         </div>
         <div class="col-6 collapse-close">
@@ -53,6 +53,7 @@
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
+            title="Direcciones"
             href="https://www.youtube.com/watch?v=rUZd4YgJ9nI"
           >
             ¿CÓMO LLEGAR?
