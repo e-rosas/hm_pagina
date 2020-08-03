@@ -65,6 +65,17 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    [
+      'nuxt-compress',
+      {
+        gzip: {
+          cache: true
+        },
+        brotli: {
+          threshold: 10240
+        }
+      }
+    ],
     '@nuxtjs/sitemap',
     [
       '@nuxtjs/component-cache',
@@ -86,6 +97,6 @@ export default {
   /*
    ** Build configuration
    */
-  build: { extractCSS: true },
+  build: { extractCSS: true, analyze: true },
   router: {}
 }
