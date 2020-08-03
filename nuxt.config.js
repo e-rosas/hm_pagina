@@ -3,6 +3,15 @@ export default {
   /*
    ** Headers of the page
    */
+  /*
+   ** Nuxt target
+   ** See https://nuxtjs.org/api/configuration-target
+   */
+  target: 'static',
+  /*
+   ** Headers of the page
+   ** See https://nuxtjs.org/api/configuration-head
+   */
   head: {
     title: 'Hospital México​ in Tijuana',
     meta: [
