@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import MainSlider from './components/MainSlider'
-import Description from './components/Description'
-import Services from './components/Services'
-import Surgeries from './components/Surgeries'
-import Insurances from './components/Insurances'
-import Contact from './components/Contact'
-import Tourism from './components/Tourism'
-import Message from './components/Message'
+import MainSlider from '../components/MainSlider'
+import Description from '../components/Description'
+import Services from '../components/Services'
+import Surgeries from '../components/Surgeries'
+import Insurances from '../components/Insurances'
+import Contact from '../components/Contact'
+import Tourism from '../components/Tourism'
+import Message from '../components/Message'
 export default {
   layout: 'App',
   name: 'Index',

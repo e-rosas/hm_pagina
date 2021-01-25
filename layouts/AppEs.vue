@@ -12,8 +12,8 @@
 
 <script>
 import { FadeTransition } from 'vue2-transitions'
-import Header from '~/pages/components/es/Header'
-import Footer from '~/pages/components/es/Footer'
+import Header from '~/components/es/Header'
+import Footer from '~/components/es/Footer'
 
 export default {
   name: 'AppEs',

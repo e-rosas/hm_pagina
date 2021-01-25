@@ -12,8 +12,8 @@
 
 <script>
 import { FadeTransition } from 'vue2-transitions'
-import SimpleHeader from '~/pages/components/SimpleHeader'
-import Footer from '~/pages/components/es/Footer'
+import SimpleHeader from '~/components/SimpleHeader'
+import Footer from '~/components/es/Footer'
 
 export default {
   name: 'SimpleLayout',

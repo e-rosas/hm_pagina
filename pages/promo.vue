@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import FormPromo from './components/promo/FormPromo'
+import FormPromo from '../components/promo/FormPromo'
 
 export default {
   layout: 'SimpleLayout',

@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import FormRegister from './components/register/FormRegister'
+import FormRegister from '../components/register/FormRegister'
 export default {
   layout: 'SimpleLayout',
   name: 'Register',

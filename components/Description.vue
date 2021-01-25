@@ -2,6 +2,23 @@
   <section class="section">
     <div class="container">
       <div class="row row-grid align-items-center">
+        <div class="col-lg-12">
+          <card class="border-0" hover shadow body-classes="py-5">
+            <div class="row text-justify">
+              <div class="col-md-12">
+                <img
+                  v-lazy="
+                    '/img/videoconsulta/PublicidadVideoConsultaEn-min.png'
+                  "
+                  class="rounded-square img-center img-fluid"
+                  alt="HM Tijuana"
+                />
+              </div>
+            </div>
+          </card>
+        </div>
+      </div>
+      <div class="row row-grid align-items-center">
         <div class="col-md-6 order-md-1">
           <div class="pr-md-5">
             <icon
