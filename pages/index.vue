@@ -12,17 +12,17 @@
 </template>
 
 <script>
-import MainSlider from './components/MainSlider'
-import Description from './components/Description'
-import Services from './components/Services'
-import Surgeries from './components/Surgeries'
-import Insurances from './components/Insurances'
-import Contact from './components/Contact'
-import Tourism from './components/Tourism'
-import Message from './components/Message'
+import MainSlider from './components/es/MainSlider'
+import Description from './components/es/Description'
+import Services from './components/es/Services'
+import Surgeries from './components/es/Surgeries'
+import Insurances from './components/es/Insurances'
+import Contact from './components/es/Contact'
+import Tourism from './components/es/Tourism'
+import Message from './components/es/Message'
 export default {
-  layout: 'App',
-  name: 'Index',
+  layout: 'AppEs',
+  name: 'IndexEsp',
   components: {
     MainSlider,
     Description,
@@ -35,36 +35,16 @@ export default {
   },
   data() {
     return {
-      title: 'Hospital México​ in Tijuana, providing affordable health care.',
+      title: 'Hospital Mexico​ en Tijuana',
       description:
-        'Hospital México​ in Tijuana has been providing affordable health care for over 25 years. We offer medical services, including surgery, at a low cost. Call now for any questions you may have.',
-      structuredData: {
-        '@context': 'http://schema.org',
-        '@type': 'MedicalBusiness',
-        name: 'Hospital México',
-        currenciesAccepted: 'USD, MXN',
-        paymentAccepted: 'Cash, Credit Card',
-        image: 'https://hospitalmexico.org/img/brand/Hm-logo-02.png',
-        telephone: '1 800 315 87 14',
-        email: 'info@hospitalmexico.org',
-        openingHours: ['Mo-Su all day'],
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'Hospital México 9077 De la Amistad Av.',
-          addressLocality: 'Colonia Federal',
-          addressRegion: 'Tijuana, B.C',
-          addressCountry: 'Mexico',
-          postalCode: '22010'
-        },
-        url: 'https://hospitalmexico.org/'
-      }
+        'Hospital Mexico en Tijuana ha brindado atencion medica por mas de 25 años. Llame ahora en caso de tener alguna duda o pregunta.'
     }
   },
   head() {
     return {
       title: this.title,
       htmlAttrs: {
-        lang: 'en'
+        lang: 'es'
       },
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
@@ -72,9 +52,14 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.description
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            'Hospital, Tijuana, México,​ Dental,Cirugias accesibles, San Diego, Linea, Citas, Mexico, Accesible'
         }
-      ],
-      script: [{ type: 'application/ld+json', json: this.structuredData }]
+      ]
     }
   }
 }

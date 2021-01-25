@@ -100,7 +100,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
+          <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="en">
             <span class="nav-link">English</span>
           </nuxt-link>
         </li>

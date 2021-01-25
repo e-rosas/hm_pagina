@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -55,7 +54,8 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/fontawesome'
   ],
   /*
    ** Nuxt.js modules
@@ -97,6 +97,6 @@ export default {
   /*
    ** Build configuration
    */
-  build: { extractCSS: true, analyze: true },
+  build: { extractCSS: true },
   router: {}
 }

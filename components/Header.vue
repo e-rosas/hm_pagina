@@ -1,9 +1,9 @@
 <template>
   <div>
     <base-nav type="" transparent effect="" expand>
-      <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="/">
+      <NuxtLink slot="brand" class="navbar-brand mr-lg-5" to="/">
         <img src="img/brand/Hm-logo-02.png" alt="logo" />
-      </nuxt-link>
+      </NuxtLink>
 
       <div slot="content-header" slot-scope="{ closeMenu }" class="row">
         <div class="col-6 collapse-brand">
@@ -83,11 +83,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <nuxt-link
+          <NuxtLink
             class="nav-link nav-link-icon"
-            to="registro"
+            to="tutoriales/videoconsulta"
             title="Register"
-            >REGISTER</nuxt-link
+            >REGISTER</NuxtLink
           >
         </li>
       </ul>
@@ -121,9 +121,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <nuxt-link slot="brand" class="navbar-brand mr-lg-5" to="es">
+          <NuxtLink slot="brand" class="navbar-brand mr-lg-5" to="/">
             <span class="nav-link">Español</span>
-          </nuxt-link>
+          </NuxtLink>
         </li>
       </ul>
     </base-nav>

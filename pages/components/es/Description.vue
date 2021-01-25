@@ -2,6 +2,33 @@
   <section class="section">
     <div class="container">
       <div class="row row-grid align-items-center">
+        <div class="col-lg-12">
+          <card class="border-0" hover shadow body-classes="py-5">
+            <div class="row text-justify">
+              <!-- <div class="col-md-4">
+                <h6 class="text-primary text-uppercase">
+                  Cada vez más personas se atienden fuera de Estados Unidos
+                </h6>
+                <p class="description mt-3">
+                  De acuerdo a la “Encuesta 2017 de los tiempos de espera de
+                  citas médicas y las tasas de aceptación de Medicare y
+                  Medicaid”, los pacientes esperan un promedio de 24 días para
+                  programar una cita de primera vez con un médico; esto
+                  representa un incremento de 30% comparado con el año 2014.
+                </p>
+              </div> -->
+              <div class="col-md-12">
+                <img
+                  v-lazy="'/img/videoconsulta/PublicidadVideoConsulta-min.png'"
+                  class="rounded-square img-center img-fluid"
+                  alt="HM Tijuana"
+                />
+              </div>
+            </div>
+          </card>
+        </div>
+      </div>
+      <div class="row row-grid align-items-center">
         <div class="col-md-6 order-md-1">
           <div class="pr-md-5">
             <icon
